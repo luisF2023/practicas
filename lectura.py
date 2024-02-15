@@ -20,7 +20,7 @@ except FileNotFoundError:
     print("El archivo especificado no fue encontrado.")
 
 except PermissionError:
-    print("No se tienen los permisos necesarios para acceder al archivo.")
+    print("No se tienen los permisos necesarios para acceder al archivo intente nuevamemnte.")
 
 except Exception as e:
     print("Ocurrió un error:", e)

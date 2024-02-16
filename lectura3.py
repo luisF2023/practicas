@@ -1,5 +1,5 @@
 import os
-import time
+import time #Utilizamos time para calcular el tiempo en que sedemore en correr el archivo
 
 def buscar_archivo():
     nombre_archivo = input("Bienvenido, Ingrese el nombre del archivo que desea buscar: ")
@@ -30,7 +30,6 @@ def guardar_archivo(nombre_archivo):
 
     opcion = input("Desea guardar el archivo? (si/no): ")
     if opcion.lower() == 'si':
-        # No es necesario guardar el archivo en este ejemplo
         print(f"El archivo {nombre_archivo} ha sido guardado exitosamente.")
 
 def calcular_tiempo_ejecucion():
@@ -40,7 +39,7 @@ def calcular_tiempo_ejecucion():
     guardar_archivo(nombre_archivo)
     fin = time.time()
     tiempo_total = fin - inicio
-    print(f"Tiempo total de ejecución: {tiempo_total} segundos.")
+    print(f"El Tiempo total de ejecución: {tiempo_total} segundos.")
 
 if __name__ == "__main__":
     calcular_tiempo_ejecucion()

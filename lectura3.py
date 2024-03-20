@@ -1,8 +1,8 @@
 import os
-import time #Utilizamos time para calcular el tiempo en que sedemore en correr el archivo
+import time 
 
 def buscar_archivo():
-    nombre_archivo = input("Bienvenido, Ingrese el nombre del archivo que desea buscar: ")
+    nombre_archivo = input("Bienvenido, Ingrese el nombre dpypel archivo que desea buscar: ")
     if os.path.exists(nombre_archivo):
         print(f"El archivo {nombre_archivo} existe.")
         with open(nombre_archivo, 'r') as file:
@@ -32,6 +32,7 @@ def guardar_archivo(nombre_archivo):
     if opcion.lower() == 'si':
         print(f"El archivo {nombre_archivo} ha sido guardado exitosamente.")
 
+#Utilizamos time para calcular el tiempo en que sedemore en correr el archivo
 def calcular_tiempo_ejecucion():
     inicio = time.time()
     nombre_archivo = buscar_archivo()
@@ -43,3 +44,10 @@ def calcular_tiempo_ejecucion():
 
 if __name__ == "__main__":
     calcular_tiempo_ejecucion()
+
+'''
+Read ("r") (Leer)
+Append ("a") (Agregar)
+Write ("w") (Escribir)
+Create ("x") (Crear)
+'''
